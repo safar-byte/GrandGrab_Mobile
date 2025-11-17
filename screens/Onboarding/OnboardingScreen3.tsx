@@ -13,7 +13,7 @@ export default function OnboardingScreen3({ navigation }: OnboardingScreenProps)
       </TouchableOpacity>
 
       <Image
-        source={require('../../assets/images/onboarding-chef.png')}
+        source={require('../../assets/images/onBoardingScreen3.png')}
         style={styles.illustration}
         resizeMode="contain"
       />
@@ -61,13 +61,13 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   illustration: {
-    width: '80%',
-    height: 260,
-    marginTop: 40,
+    width: '100%',
+    height: 280,
+    marginTop: 43,
   },
   progressContainer: {
     flexDirection: 'row',
-    marginTop: 20,
+    // marginTop: ,
     marginBottom: 20,
   },
   progressDotActive: {
