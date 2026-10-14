@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🍔 GrandGrab Mobile
 
-## Get started
+**First prototype of the GrandGrab food-delivery app — onboarding flow and home screen in React Native + Expo.**
 
-1. Install dependencies
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo_SDK_54-000020?style=flat-square&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-   ```bash
-   npm install
-   ```
+</div>
 
-2. Start the app
+> **Status:** prototype. Development continued in a full rewrite, GrandGrab v2, with cart, checkout, order tracking and auth.
 
-   ```bash
-   npx expo start
-   ```
+## What's here
 
-In the output, you'll find options to open the app in a
+- A three-step **onboarding** carousel wired with React Navigation's stack navigator
+- A **home screen** layout for the restaurant feed
+- Themed text/view components with automatic light and dark mode
+- Expo Router tab layout scaffold
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Getting started
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Open it in Expo Go, an Android emulator (`a`) or iOS simulator (`i`).
 
-## Learn more
+## Project structure
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+app/(tabs)/                 tab layout and entry screen
+navigation/                 OnboardingNavigator (stack)
+screens/Onboarding/         OnboardingScreen1–3
+screens/Home/               HomeScreen
+components/  hooks/  constants/   themed UI, color-scheme hooks, theme
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Tech stack
 
-## Join the community
+React Native 0.81 · Expo SDK 54 · Expo Router · React Navigation · TypeScript
 
-Join our community of developers creating universal apps.
+## Author
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Muhammed Safar** — [@safar-byte](https://github.com/safar-byte)
